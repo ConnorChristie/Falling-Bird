@@ -14,6 +14,10 @@
 		B399AAE2194B7E8000FAB60D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B399AAE0194B7E8000FAB60D /* Main.storyboard */; };
 		B399AAE4194B7E8000FAB60D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B399AAE3194B7E8000FAB60D /* Images.xcassets */; };
 		B399AAF0194B7E8000FAB60D /* Falling_BallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B399AAEF194B7E8000FAB60D /* Falling_BallTests.swift */; };
+		B399AAFE194B7F1500FAB60D /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = B399AAFA194B7F1500FAB60D /* Background.png */; };
+		B399AAFF194B7F1500FAB60D /* Ground.png in Resources */ = {isa = PBXBuildFile; fileRef = B399AAFB194B7F1500FAB60D /* Ground.png */; };
+		B399AB00194B7F1500FAB60D /* LeftPipe.png in Resources */ = {isa = PBXBuildFile; fileRef = B399AAFC194B7F1500FAB60D /* LeftPipe.png */; };
+		B399AB01194B7F1500FAB60D /* RightPipe.png in Resources */ = {isa = PBXBuildFile; fileRef = B399AAFD194B7F1500FAB60D /* RightPipe.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		B399AAE9194B7E8000FAB60D /* Falling BallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Falling BallTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B399AAEE194B7E8000FAB60D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B399AAEF194B7E8000FAB60D /* Falling_BallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Falling_BallTests.swift; sourceTree = "<group>"; };
+		B399AAFA194B7F1500FAB60D /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		B399AAFB194B7F1500FAB60D /* Ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ground.png; sourceTree = "<group>"; };
+		B399AAFC194B7F1500FAB60D /* LeftPipe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeftPipe.png; sourceTree = "<group>"; };
+		B399AAFD194B7F1500FAB60D /* RightPipe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RightPipe.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,7 @@
 		B399AAD5194B7E8000FAB60D /* Falling Ball */ = {
 			isa = PBXGroup;
 			children = (
+				B399AAF9194B7F0100FAB60D /* Images */,
 				B399AAD8194B7E8000FAB60D /* AppDelegate.swift */,
 				B399AADA194B7E8000FAB60D /* GameScene.sks */,
 				B399AADC194B7E8000FAB60D /* GameScene.swift */,
@@ -113,6 +122,17 @@
 				B399AAEE194B7E8000FAB60D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B399AAF9194B7F0100FAB60D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B399AAFA194B7F1500FAB60D /* Background.png */,
+				B399AAFB194B7F1500FAB60D /* Ground.png */,
+				B399AAFC194B7F1500FAB60D /* LeftPipe.png */,
+				B399AAFD194B7F1500FAB60D /* RightPipe.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +184,7 @@
 				TargetAttributes = {
 					B399AAD2194B7E8000FAB60D = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = MB848KS9KT;
 					};
 					B399AAE8194B7E8000FAB60D = {
 						CreatedOnToolsVersion = 6.0;
@@ -195,8 +216,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B399AB00194B7F1500FAB60D /* LeftPipe.png in Resources */,
 				B399AAE4194B7E8000FAB60D /* Images.xcassets in Resources */,
+				B399AAFE194B7F1500FAB60D /* Background.png in Resources */,
 				B399AADB194B7E8000FAB60D /* GameScene.sks in Resources */,
+				B399AB01194B7F1500FAB60D /* RightPipe.png in Resources */,
+				B399AAFF194B7F1500FAB60D /* Ground.png in Resources */,
 				B399AAE2194B7E8000FAB60D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +360,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Falling Ball/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +372,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Falling Ball/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
